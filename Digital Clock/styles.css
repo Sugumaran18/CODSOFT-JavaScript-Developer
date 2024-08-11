@@ -1,0 +1,20 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1f3442;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.clock {
+    color: rgba(0, 207, 0, 0.87);
+    font-size: 60px;
+    font-weight: bold;
+    background: #cfcfcf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(129, 129, 128);
+}

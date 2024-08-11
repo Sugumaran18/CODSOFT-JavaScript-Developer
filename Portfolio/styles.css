@@ -1,0 +1,135 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(39, 239, 39, 0.87);
+    color: #fa0506;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #074ae6;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#intro {
+    text-align: center;
+    background-color: #535352;
+    padding: 50px 20px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: rgb(129, 129, 128);
+    padding: 20px;
+    border: 1px solid rgba(39, 239, 39, 0.87);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fd00d7;
+    border-radius: 4px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #074ae6;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #fd8c00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 207, 0, 0.87);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #fa0506;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .project-item {
+        flex: 1 1 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+    }
+}
